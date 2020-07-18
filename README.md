@@ -1,4 +1,4 @@
-# vue-js-workshop
+# online-coding-workshops
 
 ## Project setup
 ```
