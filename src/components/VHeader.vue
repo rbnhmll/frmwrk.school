@@ -1,7 +1,7 @@
 <template>
   <header>
     <img alt="Vue logo" src="../assets/logo.png">
-    <h1>Vue JS Workshop</h1>
+    <h1>Online Workshops</h1>
     <date-location :eventDetails="eventDetails" />
     <SoldOut v-if="eventDetails.event.isSoldOut" />
     <component :is="ctaComp" :eventDetails="eventDetails" />

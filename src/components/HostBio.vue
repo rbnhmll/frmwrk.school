@@ -1,17 +1,35 @@
 <template>
   <section>
-    <h2>Meet the Instructor</h2>
-    <div class="description">
-      <div class="headshot">
-        <img
-          src="@/assets/robinHeadshotSquare.jpg"
-          alt="Robin Hamill headshot"
-        >
+    <h2>Meet the Instructors</h2>
+    <div class="instructor">
+      <div class="description">
+        <div class="headshot">
+          <img src="@/assets/robinHeadshotSquare.jpg" alt="Trudy MacNabb headshot" />
+        </div>
+        <h3 class="h4">
+          Trudy MacNabb is a cofounder of
+          <a
+            href="https://www.upatfive.ca/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Up at Five</a> a digital agency in Toronto.
+        </h3>
       </div>
-      <h3 class="h4">Robin Hamill is a lead instructor at <a href="https://junocollege.com/" target="_blank" rel="noopener noreferrer">Juno College</a> in Toronto, and an independent E-commerce consultant that works with merchants to create
-        unique buying experiences by adding Vue.js (amongst other tools) to Shopify themes.</h3>
+      <social-icons />
     </div>
-    <social-icons />
+    <hr />
+    <div class="instructor">
+      <div class="description">
+        <div class="headshot">
+          <img src="@/assets/robinHeadshotSquare.jpg" alt="Robin Hamill headshot" />
+        </div>
+        <h3 class="h4">
+          Robin Hamill is an independent E-commerce consultant that works with merchants to create
+          unique buying experiences by adding Vue.js (amongst other tools) to Shopify themes.
+        </h3>
+      </div>
+      <social-icons />
+    </div>
   </section>
 </template>
 

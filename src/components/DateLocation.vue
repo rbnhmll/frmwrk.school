@@ -13,7 +13,7 @@
       <p>{{ location.time }}</p>
     </template>
     <template v-else>
-      <h2 class="h4 heading">Toronto &bull; TBA</h2>
+      <h2 class="h4 heading">Online &bull; TBA</h2>
     </template>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <p><span>Made with <icon-vue /></span> by <a href="https://www.robinhamill.com">Robin Hamill</a> &bull; {{year}}</p>
+    <p>&copy; Online Workshops &bull; {{year}}</p>
   </footer>
 </template>
 

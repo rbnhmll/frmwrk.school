@@ -6,7 +6,7 @@
       <SoldOut v-if="eventDetails.event.isSoldOut" />
       <Signup v-if="eventDetails.event.isLive" :eventDetails="eventDetails" />
       <template v-else>
-        <p>The next workshop is coming soon. Sign up below to be notified.</p>
+        <p>Workshops are coming soon. Sign up below to be notified.</p>
       </template>
     </div>
   </section>
