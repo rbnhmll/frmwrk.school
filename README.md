@@ -1,4 +1,4 @@
-# online-coding-workshops
+# FRMWRK School
 
 ## Project setup
 ```
