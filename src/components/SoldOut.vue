@@ -1,6 +1,6 @@
 <template>
   <div class="sold-out">
-    <h2>Workshop Sold out!</h2>
+    <h2 class="h2">Workshop Sold out!</h2>
   </div>
 </template>
 

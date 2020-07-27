@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <p>&copy; Online Workshops &bull; {{year}}</p>
+    <p>&copy; FRMWRK School &bull; {{year}}</p>
   </footer>
 </template>
 

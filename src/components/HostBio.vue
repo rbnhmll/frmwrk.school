@@ -1,10 +1,10 @@
 <template>
   <section>
-    <h2>Meet the Instructors</h2>
+    <h2 class="h2">Meet the Instructors</h2>
     <div class="instructor">
       <div class="description">
         <div class="headshot">
-          <img src="@/assets/robinHeadshotSquare.jpg" alt="Trudy MacNabb headshot" />
+          <img src="@/assets/trudyHeadshotSquare.jpg" alt="Trudy MacNabb headshot" />
         </div>
         <h3 class="h4">
           Trudy MacNabb is a cofounder of
@@ -15,7 +15,11 @@
           >Up at Five</a> a digital agency in Toronto.
         </h3>
       </div>
-      <social-icons />
+      <social-icons
+        twitter="https://twitter.com/dear_trudence"
+        github="https://github.com/deartrudence"
+        web="https://www.upatfive.ca/"
+      />
     </div>
     <hr />
     <div class="instructor">
@@ -24,20 +28,24 @@
           <img src="@/assets/robinHeadshotSquare.jpg" alt="Robin Hamill headshot" />
         </div>
         <h3 class="h4">
-          Robin Hamill is an independent E-commerce consultant that works with merchants to create
+          Robin Hamill is an independent E-commerce consultant working with merchants to create
           unique buying experiences by adding Vue.js (amongst other tools) to Shopify themes.
         </h3>
       </div>
-      <social-icons />
+      <social-icons
+        twitter="https://twitter.com/rbnhmll"
+        github="https://github.com/rbnhmll"
+        web="https://robinhamill.com"
+      />
     </div>
   </section>
 </template>
 
 <script>
-import SocialIcons from './SocialIcons.vue';
+import SocialIcons from "./SocialIcons.vue";
 
 export default {
-  name: 'HostBio',
+  name: "HostBio",
   components: {
     SocialIcons,
   },
@@ -66,6 +74,6 @@ img
   justify-content flex-start
   grid-gap 0 50px
 
-  @media screen and (max-width: 680px)
+  @media screen and (max-width 680px)
     grid-template-columns 1fr
 </style>

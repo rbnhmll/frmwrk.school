@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>What will I learn?</h2>
+    <h2 class="h2">What will I learn?</h2>
 
     <ul>
       <li v-for="(topic, i) in topics" :key="i">
@@ -8,7 +8,7 @@
       </li>
     </ul>
 
-    <h2>Experience</h2>
+    <h2 class="h2">Experience</h2>
 
     <p>Participants should be comfortable with
       <strong>HTML</strong> and <strong>CSS</strong>,

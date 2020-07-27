@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="content">
-      <h2>Workshop Details</h2>
+      <h2 class="h2">Workshop Details</h2>
       <DateLocation :eventDetails="eventDetails" />
       <SoldOut v-if="eventDetails.event.isSoldOut" />
       <Signup v-if="eventDetails.event.isLive" :eventDetails="eventDetails" />

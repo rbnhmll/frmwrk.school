@@ -1,17 +1,29 @@
 <template>
   <ul>
     <li>
-      <a href="https://twitter.com/rbnhmll" aria-label="Twitter" title="Twitter" target="_blank" rel="noopener noreferrer">
+      <a
+        :href="twitter"
+        aria-label="Twitter"
+        title="Twitter"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <icon-twitter />
       </a>
     </li>
     <li>
-      <a href="https://github.com/rbnhmll" aria-label="Github" title="Github" target="_blank" rel="noopener noreferrer">
+      <a
+        :href="github"
+        aria-label="Github"
+        title="Github"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <icon-github />
       </a>
     </li>
     <li>
-      <a href="https://robinhamill.com" aria-label="Website" title="Website" target="_blank" rel="noopener noreferrer">
+      <a :href="web" aria-label="Website" title="Website" target="_blank" rel="noopener noreferrer">
         <icon-website />
       </a>
     </li>
@@ -19,16 +31,21 @@
 </template>
 
 <script>
-import IconTwitter from './icons/IconTwitter.vue';
-import IconGithub from './icons/IconGithub.vue';
-import IconWebsite from './icons/IconWebsite.vue';
+import IconTwitter from "./icons/IconTwitter.vue";
+import IconGithub from "./icons/IconGithub.vue";
+import IconWebsite from "./icons/IconWebsite.vue";
 
 export default {
-  name: 'SocialIcons',
+  name: "SocialIcons",
   components: {
     IconTwitter,
     IconGithub,
     IconWebsite,
+  },
+  props: {
+    twitter: String,
+    github: String,
+    web: String,
   },
 };
 </script>

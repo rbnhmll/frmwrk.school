@@ -1,7 +1,8 @@
 <template>
   <header>
-    <img alt="Vue logo" src="../assets/logo.png">
-    <h1>Online Workshops</h1>
+    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
+    <h1 class="h1">FRMWRK</h1>
+    <h2 class="h3">Live Online workshops to extend your skillset, career and mind</h2>
     <date-location :eventDetails="eventDetails" />
     <SoldOut v-if="eventDetails.event.isSoldOut" />
     <component :is="ctaComp" :eventDetails="eventDetails" />
@@ -41,6 +42,6 @@ img
   max-width 150px
   width 100%
 
-  @media screen and (max-width: 480px)
+  @media screen and (max-width 480px)
     max-width 100px
 </style>
