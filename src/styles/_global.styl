@@ -38,15 +38,19 @@ a.btn,
   text-transform uppercase
   border-radius 3px
   padding 10px 40px
-  background #fff
-  color $dark-grey
+  color $white
+  background $dark-grey
   transition()
 
-  &:hover, &:focus, &:active
+  &:hover,
+  &:focus,
+  &:active
     &:not(:disabled)
       box-shadow()
   &:disabled
     opacity 0.5
+    background $white
+    color $dark-grey
 
 p
   line-height 1.5

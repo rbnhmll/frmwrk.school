@@ -1,12 +1,27 @@
+<form
+  action="https://buttondown.email/api/emails/embed-subscribe/FRMWRK.school"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.email/FRMWRK.school', 'popupwindow')"
+  class="embeddable-buttondown-form"
+>
+  <label for="bd-email">Enter your email</label>
+  <input type="email" name="email" id="bd-email"></input>
+  <input type="hidden" value="1" name="embed"></input>
+  <input type="submit" value="Subscribe"></input>
+  <p>
+    <a href="https://buttondown.email" target="_blank">Powered by Buttondown.</a>
+  </p>
+</form>
+
 <template>
   <div id="mc_embed_signup" class="mc_embed_signup">
     <form
-      action="https://robinhamill.us19.list-manage.com/subscribe/post?u=c39fa08c53c3453ac24ae8a66&amp;id=687f088c6f"
+      action="https://buttondown.email/api/emails/embed-subscribe/FRMWRK.school"
       method="post"
-      id="mc-embedded-subscribe-form"
-      name="mc-embedded-subscribe-form"
+      id="subscribe-form"
+      name="subscribe-form"
       class="validate"
-      target="_blank"
       rel="noopener noreferrer"
       novalidate
     >
@@ -14,39 +29,25 @@
         <h2 class="h4" v-if="eventDetails.event.isLive">Can't make this one?</h2>
         <h2 class="h5">Sign up to be the first to know when the next workshop is announced!</h2>
         <div class="grid">
-          <div class="mc-field-group input-group">
+          <div class="input-group">
             <input
               type="email"
               value=""
-              name="EMAIL"
+              name="email"
               class="required email"
-              id="mce-EMAIL"
+              id="email"
               required
               @input="validateEmail($event)"
             >
-            <label for="mce-EMAIL">Email Address </label>
+            <label for="email">Email Address </label>
           </div>
           <input
             type="submit"
             value="Notify me!"
             name="subscribe"
-            id="mc-embedded-subscribe"
             class="btn"
             :disabled="!validEmail"
           >
-        </div>
-        <div id="mce-responses" class="clear">
-          <div class="response" id="mce-error-response" style="display:none"></div>
-          <div class="response" id="mce-success-response" style="display:none"></div>
-        </div>
-        <div
-          style="position: absolute; left: -5000px;"
-          aria-hidden="true">
-          <input
-          type="text"
-          name="b_c39fa08c53c3453ac24ae8a66_687f088c6f"
-          tabindex="-1"
-          value="">
         </div>
       </div>
     </form>

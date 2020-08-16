@@ -1,7 +1,8 @@
 <template>
   <header>
-    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <h1 class="h1">FRMWRK</h1>
+    <h1 class="h1">
+      <img alt="FRMWRK School Logo" src="../assets/logo_big.png">
+    </h1>
     <h2 class="h3">Live Online workshops to extend your skillset, career and mind</h2>
     <date-location :eventDetails="eventDetails" />
     <SoldOut v-if="eventDetails.event.isSoldOut" />
@@ -39,7 +40,7 @@ header
   text-align center
 
 img
-  max-width 150px
+  max-width 350px
   width 100%
 
   @media screen and (max-width 480px)
