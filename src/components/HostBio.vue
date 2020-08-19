@@ -12,7 +12,7 @@
             href="https://www.upatfive.ca/"
             target="_blank"
             rel="noopener noreferrer"
-          >Up at Five</a> a digital agency in Toronto.
+          >Up at Five</a>, a digital agency that specializes in taking your Shopify site to the next level.
         </h3>
       </div>
       <social-icons
