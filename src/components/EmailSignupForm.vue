@@ -1,19 +1,3 @@
-<form
-  action="https://buttondown.email/api/emails/embed-subscribe/FRMWRK.school"
-  method="post"
-  target="popupwindow"
-  onsubmit="window.open('https://buttondown.email/FRMWRK.school', 'popupwindow')"
-  class="embeddable-buttondown-form"
->
-  <label for="bd-email">Enter your email</label>
-  <input type="email" name="email" id="bd-email"></input>
-  <input type="hidden" value="1" name="embed"></input>
-  <input type="submit" value="Subscribe"></input>
-  <p>
-    <a href="https://buttondown.email" target="_blank">Powered by Buttondown.</a>
-  </p>
-</form>
-
 <template>
   <div id="mc_embed_signup" class="mc_embed_signup">
     <form
