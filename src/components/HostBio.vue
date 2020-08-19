@@ -28,7 +28,7 @@
           <img src="@/assets/robinHeadshotSquare.jpg" alt="Robin Hamill headshot" />
         </div>
         <h3 class="h4">
-          Robin Hamill is a Shopify Expert and E-commerce consultant specializing in performant and accessible custom themes.
+          Robin Hamill is a Shopify Expert and E-commerce consultant specializing in performant and accessible shops with mass appeal.
         </h3>
       </div>
       <social-icons
