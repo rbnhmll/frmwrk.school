@@ -44,5 +44,5 @@ img
   width 100%
 
   @media screen and (max-width 480px)
-    max-width 100px
+    max-width 200px
 </style>

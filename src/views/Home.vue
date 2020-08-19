@@ -3,9 +3,9 @@
     <card>
       <v-header :eventDetails="eventDetails" />
     </card>
-    <card>
+    <!-- <card>
       <description />
-    </card>
+    </card> -->
     <card>
       <course-topics />
     </card>

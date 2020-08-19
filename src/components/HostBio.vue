@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="bio">
     <h2 class="h2">Meet the Instructors</h2>
     <div class="instructor">
       <div class="description">
@@ -28,8 +28,7 @@
           <img src="@/assets/robinHeadshotSquare.jpg" alt="Robin Hamill headshot" />
         </div>
         <h3 class="h4">
-          Robin Hamill is an independent E-commerce consultant working with merchants to create
-          unique buying experiences by adding Vue.js (amongst other tools) to Shopify themes.
+          Robin Hamill is a Shopify Expert and E-commerce consultant specializing in performant and accessible custom themes.
         </h3>
       </div>
       <social-icons
@@ -42,10 +41,10 @@
 </template>
 
 <script>
-import SocialIcons from "./SocialIcons.vue";
+import SocialIcons from './SocialIcons.vue';
 
 export default {
-  name: "HostBio",
+  name: 'HostBio',
   components: {
     SocialIcons,
   },
@@ -76,4 +75,7 @@ img
 
   @media screen and (max-width 680px)
     grid-template-columns 1fr
+
+hr
+  margin-bottom 3rem
 </style>

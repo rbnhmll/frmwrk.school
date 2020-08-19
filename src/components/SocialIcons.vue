@@ -1,14 +1,8 @@
 <template>
   <ul>
     <li>
-      <a
-        :href="twitter"
-        aria-label="Twitter"
-        title="Twitter"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <icon-twitter />
+      <a :href="web" aria-label="Website" title="Website" target="_blank" rel="noopener noreferrer">
+        <icon-website />
       </a>
     </li>
     <li>
@@ -23,20 +17,26 @@
       </a>
     </li>
     <li>
-      <a :href="web" aria-label="Website" title="Website" target="_blank" rel="noopener noreferrer">
-        <icon-website />
+      <a
+        :href="twitter"
+        aria-label="Twitter"
+        title="Twitter"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <icon-twitter />
       </a>
     </li>
   </ul>
 </template>
 
 <script>
-import IconTwitter from "./icons/IconTwitter.vue";
-import IconGithub from "./icons/IconGithub.vue";
-import IconWebsite from "./icons/IconWebsite.vue";
+import IconTwitter from './icons/IconTwitter.vue';
+import IconGithub from './icons/IconGithub.vue';
+import IconWebsite from './icons/IconWebsite.vue';
 
 export default {
-  name: "SocialIcons",
+  name: 'SocialIcons',
   components: {
     IconTwitter,
     IconGithub,
