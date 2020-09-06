@@ -11,7 +11,13 @@
     >
       <div id="mc_embed_signup_scroll">
         <h2 class="h4" v-if="eventDetails.event.isLive">Can't make this one?</h2>
-        <h2 class="h5">Sign up to be the first to know when the next workshop is announced!</h2>
+        <h2 class="h5">Sign up to be the first to know when the next workshops are announced, and let us know what you're interested in!</h2>
+        <div class="courses">
+          <span v-for="(course, i) in courses" :key="i">
+            <input name="courses" type="checkbox" :id="`${course}_${_uid}`" :value="course">
+            <label :for="`${course}_${_uid}`">{{ course }}</label>
+          </span>
+        </div>
         <div class="grid">
           <div class="input-group">
             <input
@@ -19,11 +25,11 @@
               value=""
               name="email"
               class="required email"
-              id="email"
+              :id="`email_${_uid}`"
               required
               @input="validateEmail($event)"
             >
-            <label for="email">Email Address </label>
+            <label :for="`email_${_uid}`">Email Address </label>
           </div>
           <input
             type="submit"
@@ -47,6 +53,7 @@ export default {
   data() {
     return {
       validEmail: false,
+      courses: ['Vue', 'D3', 'Shopify'],
     };
   },
   methods: {
@@ -62,6 +69,14 @@ export default {
 
 <style scoped lang="stylus">
 @import '../styles/_vars'
+
+.courses
+  display grid
+  grid-template-columns repeat(3, 1fr)
+  grid-gap 10px
+  margin-bottom 1.5rem
+  input
+    margin-right 1rem
 
 .grid
   display grid
