@@ -9,7 +9,7 @@
         :class="{ active: activeCourse == course.name }"
         @click="loadCourse(course.name)"
       >
-        {{ course.name }} <img :src="course.icon" :alt="course.name" />
+        <span class="name">{{ course.name }}</span> <img :src="course.icon" :alt="course.name" />
       </button>
     </div>
     <div
