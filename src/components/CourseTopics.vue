@@ -99,23 +99,21 @@ export default {
           instructor: 'Trudy MacNabb',
           synopsisHTML: `
             <h4 class="standout">This is a beginner level tutorial for people wanting to learn the basics of Data visualization and d3.js!</h4>
-            <p>You'll learn to take JSON data and transform it into a line chart. This video goes through each step thoroughly. From scaling data, to creating the axes, to adding a hover we'll go through the mechanics of each principle in D3 and chart making.</p>
-            <p>We'll expand upon our charting skills by taking JSON data and transforming it into a bar chart. At this point the patterns and standards of D3 will really become clear.</p>
-            <p>We'll learn more advanced methods of D3 by creating a bubble chart. We'll get to see how powerful D3 can be with regards to mathematical calculations.</p>
-            <p>Finally we'll take everything we've learned and add dynamic data and user interaction.</p>
+            <p>You'll learn to take JSON data and transform it into a line chart. We'll go through each step thoroughly. From scaling data, to creating the axes, to adding a hover we'll go through the mechanics of each principle in D3 and chart making.</p>
+            <p>While we're making the line chart we'll examine the basic principles and practices common to chart making with d3. At this point the patterns and standards of D3 will really become clear.</p>
+            <p>You'll leave with an understanding how data translates into a chart with an understanding of scaling and placing the datapoints.</p>
           `,
           topics: [
             'What is D3?',
             'Line Chart',
-            'Bar Chart',
-            'Bubble Chart',
-            'Dynamic Chart',
+            'SVGs',
+            'Data Scales',
             'Gotchas',
             'Tips & Tricks',
             'More...',
           ],
           requisitesHTML: `
-            <p>Participants should be comfortable with <strong>HTML</strong> and <strong>CSS</strong>, and have a fundamental understanding of <strong>JavaScript</strong>, the <strong>terminal</strong>, and <strong>npm</strong>.</p>
+            <p>Participants should be comfortable with <strong>HTML</strong> and <strong>CSS</strong>, and have a fundamental understanding of <strong>JavaScript</strong>, and the <strong>terminal</strong>.</p>
             
             <p>Experience with other libraries like <strong>jQuery</strong> is a bonus, but not required.</p>
           `,
