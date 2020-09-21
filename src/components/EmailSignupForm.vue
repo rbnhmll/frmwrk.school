@@ -12,12 +12,12 @@
       <div id="mc_embed_signup_scroll">
         <h2 class="h4" v-if="eventDetails.event.isLive">Can't make this one?</h2>
         <h2 class="h5">Sign up to be the first to know when the next workshops are announced, and let us know what you're interested in!</h2>
-        <div class="courses">
+        <!-- <div class="courses">
           <span v-for="(course, i) in courses" :key="i">
             <input name="courses" type="checkbox" :id="`${course}_${_uid}`" :value="course">
             <label :for="`${course}_${_uid}`">{{ course }}</label>
           </span>
-        </div>
+        </div> -->
         <div class="grid">
           <div class="input-group">
             <input
