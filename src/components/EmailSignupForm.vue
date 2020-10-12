@@ -12,14 +12,14 @@
       <div id="mc_embed_signup_scroll">
         <h2 class="h4" v-if="eventDetails.event.isLive">Can't make this one?</h2>
         <h2 class="h5">Sign up to be the first to know when the next workshops are announced, and let us know what you're interested in!</h2>
-        <div class="courses">
+        <!-- <div class="courses">
           <span v-for="(course, i) in courses" :key="i">
             <input name="courses" type="checkbox" :id="`${course}_${_uid}`" :value="course">
             <label :for="`${course}_${_uid}`">{{ course }}</label>
           </span>
-        </div>
+        </div> -->
         <div class="grid">
-          <div class="input-group">
+          <!-- <div class="input-group">
             <input
               type="email"
               value=""
@@ -37,7 +37,16 @@
             name="subscribe"
             class="btn"
             :disabled="!validEmail"
-          >
+          > -->
+          <form  class="grid" action="https://tinyletter.com/frmwrk" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/frmwrk', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+          <div class="input-group">
+            <input type="text" name="email" id="tlemail" class="required email"/>
+            <label for="tlemail">Email Address</label>
+            <input type="hidden" value="1" name="embed"/>
+          </div>
+          <input type="submit" value="Notify me!" class="btn"/>
+          </form>
+        
         </div>
       </div>
     </form>
@@ -82,6 +91,7 @@ export default {
   display grid
   grid-template-columns 1fr min-content
   grid-gap 10px
+  margin-top 10px
 
   @media screen and (max-width: 540px)
     grid-template-columns 1fr
