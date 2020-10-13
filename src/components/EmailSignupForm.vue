@@ -1,53 +1,22 @@
 <template>
-  <div id="mc_embed_signup" class="mc_embed_signup">
-    <form
-      action="https://buttondown.email/api/emails/embed-subscribe/FRMWRK.school"
-      method="post"
-      id="subscribe-form"
-      name="subscribe-form"
-      class="validate"
-      rel="noopener noreferrer"
-      novalidate
-    >
-      <div id="mc_embed_signup_scroll">
-        <h2 class="h4" v-if="eventDetails.event.isLive">Can't make this one?</h2>
-        <h2 class="h5">Sign up to be the first to know when the next workshops are announced, and let us know what you're interested in!</h2>
-        <!-- <div class="courses">
-          <span v-for="(course, i) in courses" :key="i">
-            <input name="courses" type="checkbox" :id="`${course}_${_uid}`" :value="course">
-            <label :for="`${course}_${_uid}`">{{ course }}</label>
-          </span>
-        </div> -->
-        <div class="grid">
-          <!-- <div class="input-group">
-            <input
-              type="email"
-              value=""
-              name="email"
-              class="required email"
-              :id="`email_${_uid}`"
-              required
-              @input="validateEmail($event)"
-            >
-            <label :for="`email_${_uid}`">Email Address </label>
-          </div>
-          <input
-            type="submit"
-            value="Notify me!"
-            name="subscribe"
-            class="btn"
-            :disabled="!validEmail"
-          > -->
-          <form  class="grid" action="https://tinyletter.com/frmwrk" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/frmwrk', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-          <div class="input-group">
-            <input type="text" name="email" id="tlemail" class="required email"/>
-            <label for="tlemail">Email Address</label>
-            <input type="hidden" value="1" name="embed"/>
-          </div>
-          <input type="submit" value="Notify me!" class="btn"/>
-          </form>
-        
+  <div>
+    <!-- <div class="courses">
+      <span v-for="(course, i) in courses" :key="i">
+        <input name="courses" type="checkbox" :id="`${course}_${_uid}`" :value="course">
+        <label :for="`${course}_${_uid}`">{{ course }}</label>
+      </span>
+    </div> -->
+
+    <form action="https://tinyletter.com/frmwrk" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/frmwrk', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+      <h2 class="h4" v-if="eventDetails.event.isLive">Can't make this one?</h2>
+      <h2 class="h5">Sign up to be the first to know when the next workshops are announced, and let us know what you're interested in!</h2>
+      <div class="grid">
+        <div class="input-group">
+          <input type="text" name="email" id="tlemail" class="required email" @input="validateEmail($event)"/>
+          <label for="tlemail">Email Address</label>
+          <input type="hidden" value="1" name="embed"/>
         </div>
+        <input type="submit" value="Notify me!" class="btn" :disabled="!validEmail"/>
       </div>
     </form>
   </div>
