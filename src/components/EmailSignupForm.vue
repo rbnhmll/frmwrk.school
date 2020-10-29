@@ -7,16 +7,34 @@
       </span>
     </div> -->
 
-    <form action="https://tinyletter.com/frmwrk" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/frmwrk', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+    <form
+      action="https://tinyletter.com/frmwrk"
+      method="post"
+      target="popupwindow"
+      onsubmit="window.open('https://tinyletter.com/frmwrk', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+    >
       <h2 class="h4" v-if="eventDetails.event.isLive">Can't make this one?</h2>
-      <h2 class="h5">Sign up to be the first to know when the next workshops are announced, and let us know what you're interested in!</h2>
+      <h2 class="h5">
+        Sign up to be the first to know when the next workshops are announced.
+      </h2>
       <div class="grid">
         <div class="input-group">
-          <input type="text" name="email" id="tlemail" class="required email" @input="validateEmail($event)"/>
+          <input
+            type="text"
+            name="email"
+            id="tlemail"
+            class="required email"
+            @input="validateEmail($event)"
+          />
           <label for="tlemail">Email Address</label>
-          <input type="hidden" value="1" name="embed"/>
+          <input type="hidden" value="1" name="embed" />
         </div>
-        <input type="submit" value="Notify me!" class="btn" :disabled="!validEmail"/>
+        <input
+          type="submit"
+          value="Notify me!"
+          class="btn"
+          :disabled="!validEmail"
+        />
       </div>
     </form>
   </div>
@@ -24,14 +42,14 @@
 
 <script>
 export default {
-  name: 'EmailSignupForm',
+  name: "EmailSignupForm",
   props: {
     eventDetails: Object,
   },
   data() {
     return {
       validEmail: false,
-      courses: ['Vue', 'D3', 'Shopify'],
+      courses: ["Vue", "D3", "Shopify"],
     };
   },
   methods: {
@@ -53,6 +71,7 @@ export default {
   grid-template-columns repeat(3, 1fr)
   grid-gap 10px
   margin-bottom 1.5rem
+
   input
     margin-right 1rem
 
@@ -62,7 +81,7 @@ export default {
   grid-gap 10px
   margin-top 10px
 
-  @media screen and (max-width: 540px)
+  @media screen and (max-width 540px)
     grid-template-columns 1fr
 
 .mc_embed_signup
