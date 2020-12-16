@@ -57,7 +57,7 @@ export default {
           location: {
             TBD: false,
             date: 'Sunday January 24, 2020',
-            time: '10am - 2pm',
+            time: '10am - 2pm (EST)',
           },
         },
         pricing: {
