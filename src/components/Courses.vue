@@ -5,21 +5,15 @@
 </template>
 
 <script>
-
 export default {
-  name: 'Courses',
-  components: {
-  },
+  name: "Courses",
+  components: {},
   data() {
-    return {
-
-    };
+    return {};
   },
 };
 </script>
 
 <style scoped lang="stylus">
 @import '../styles/_vars'
-
-
 </style>

@@ -42,14 +42,14 @@
 
 <script>
 export default {
-  name: "EmailSignupForm",
+  name: 'EmailSignupForm',
   props: {
     eventDetails: Object,
   },
   data() {
     return {
       validEmail: false,
-      courses: ["Vue", "D3", "Shopify"],
+      courses: ['Vue', 'D3', 'Shopify'],
     };
   },
   methods: {
