@@ -18,9 +18,9 @@
       <span class="label">Regular ticket</span>
     </div>
     <div>
-      <v-button url="https://ti.to/robin-hamill/vue-js-workshop">Get Tickets!</v-button>
+      <v-button :url="eventDetails.event.signupLink">Get Tickets!</v-button>
     </div>
-    <p class=""><strong>Admission is limited!</strong></p>
+    <p v-if="!eventDetails.event.online"><strong>Admission is limited!</strong></p>
   </div>
 </template>
 

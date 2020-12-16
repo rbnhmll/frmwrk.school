@@ -15,7 +15,7 @@
     <card>
       <event-details :eventDetails="eventDetails" />
     </card>
-    <card >
+    <card>
       <email-signup-form :eventDetails="eventDetails" />
     </card>
     <v-footer />
@@ -48,19 +48,17 @@ export default {
     return {
       eventDetails: {
         event: {
-          location: {
-            TBD: true,
-            date: 'Saturday October 13, 2018',
-            time: '10am - 2pm',
-            venue: {
-              name: 'Free Space',
-              mapLink: 'https://goo.gl/maps/TFi39cqF2zG2',
-            },
-
-          },
-          isLive: false,
+          name: 'Vue.js',
+          online: true,
+          isLive: true,
           hasEarlyBird: true,
           isSoldOut: false,
+          signupLink: 'https://ti.to/frmwrk/vue-js',
+          location: {
+            TBD: false,
+            date: 'Sunday January 24, 2020',
+            time: '10am - 2pm',
+          },
         },
         pricing: {
           earlyBird: 200,

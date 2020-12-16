@@ -2,12 +2,7 @@
   <div>
     <template v-if="!location.TBD">
       <h2 class="h4 heading">
-        At
-        <a
-          :href="location.venue.mapLink"
-          target="_blank"
-          rel="noopener noreferrer"
-        >{{ location.venue.name }}</a>
+        <span>{{ event.name }}</span>
         &bull; {{ location.date }}
       </h2>
       <p>{{ location.time }}</p>
@@ -27,6 +22,9 @@ export default {
   computed: {
     location() {
       return this.eventDetails.event.location;
+    },
+    event() {
+      return this.eventDetails.event;
     },
   },
 };
