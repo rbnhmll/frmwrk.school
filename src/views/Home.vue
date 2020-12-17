@@ -56,7 +56,7 @@ export default {
           signupLink: 'https://ti.to/frmwrk/vue-js',
           location: {
             TBD: false,
-            date: 'Sunday January 24, 2020',
+            date: 'Sunday January 24, 2021',
             time: '10am - 2pm (EST)',
           },
         },
