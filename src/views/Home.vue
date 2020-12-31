@@ -51,7 +51,7 @@ export default {
           name: 'Vue.js',
           online: true,
           isLive: true,
-          hasEarlyBird: true,
+          hasEarlyBird: false,
           isSoldOut: false,
           signupLink: 'https://ti.to/frmwrk/vue-js',
           location: {
