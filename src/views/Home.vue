@@ -50,7 +50,7 @@ export default {
         event: {
           name: 'Vue.js',
           online: true,
-          isLive: true,
+          isLive: false,
           hasEarlyBird: false,
           isSoldOut: false,
           signupLink: 'https://ti.to/frmwrk/vue-js',
